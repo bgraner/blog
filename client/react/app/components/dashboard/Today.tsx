@@ -175,7 +175,7 @@ class Today extends React.Component<TodayProps, TodayState> {
                 handleChecklistClicked={this.createNewChecklist.bind(this)}
                 handleEntryClicked={this.createNewEntry.bind(this)} />
             </div> */}
-TEST!!dsfsdf
+TEST!!dsfsdfs
             <div className='dashboard-scorecard-container pull-right'>
               <Scorecard
                 tasks={tasks}

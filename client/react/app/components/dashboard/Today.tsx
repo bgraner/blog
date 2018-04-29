@@ -168,14 +168,14 @@ class Today extends React.Component<TodayProps, TodayState> {
 
         <div className='default-container'>
           <div className='clearfix'>
-            <div className='dashboard-preview-container pull-left'>
+            {/* <div className='dashboard-preview-container pull-left'>
               <DashboardPreview
                 selected={selected}
                 handleScorecardClicked={this.createNewScorecard.bind(this)}
                 handleChecklistClicked={this.createNewChecklist.bind(this)}
                 handleEntryClicked={this.createNewEntry.bind(this)} />
-            </div>
-
+            </div> */}
+TEST!!dsfsdf
             <div className='dashboard-scorecard-container pull-right'>
               <Scorecard
                 tasks={tasks}

@@ -64,8 +64,33 @@ class NavDropdown extends React.Component<NavDropdownProps> {
               Today
             </div>
           </Link>
+          <Link to='/tasks'>
+            <div className='dropdown-item'
+              style={{ marginBottom: 8 }}>
+              Tasks
+            </div>
+          </Link>
+          <Link to='/social'>
+            <div className='dropdown-item'
+              style={{ marginBottom: 8 }}>
+              Friends
+            </div>
+          </Link>
+          <Link to='/rewards'>
+            <div className='dropdown-item'
+              style={{ marginBottom: 8 }}>
+              Rewards
+            </div>
+          </Link>
+          <Link to='#'
+            onClick={onLogOut}>
+            <div className='dropdown-item last-item'
+              style={{ paddingTop: 16, paddingBottom: 16 }}>
+              Log Out
+            </div>
+          </Link>
 
-          <Link to='/dashboard'>
+          {/* <Link to='/dashboard'>
             <div className='dropdown-item'>
               Dashboard
             </div>
@@ -74,7 +99,8 @@ class NavDropdown extends React.Component<NavDropdownProps> {
             <div className='dropdown-item'>
               Reporting
             </div>
-          </Link>
+          </Link> */}
+
           {/* <Link to='/gratitude'>
             <div className='dropdown-item'>
               Daily Gratitude
@@ -85,25 +111,12 @@ class NavDropdown extends React.Component<NavDropdownProps> {
               Dos and Don'ts
             </div>
           </Link> */}
-          <Link to='/tasks'>
-            <div className='dropdown-item'
-              style={{ marginBottom: 8 }}>
-              Task Settings
-            </div>
-          </Link>
-          <Link to='/self-activation'>
+
+          {/* <Link to='/self-activation'>
             <div className='dropdown-item'>
               Self-Activation
             </div>
-          </Link>
-
-          <Link to='#'
-            onClick={onLogOut}>
-            <div className='dropdown-item last-item'
-              style={{ paddingTop: 16, paddingBottom: 16 }}>
-              Log Out
-            </div>
-          </Link>
+          </Link> */}
         </div>
       </div>
     );

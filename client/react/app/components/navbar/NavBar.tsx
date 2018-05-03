@@ -97,7 +97,7 @@ class NavDropdown extends React.Component<NavDropdownProps> {
           </Link>
           <Link to='/reporting'>
             <div className='dropdown-item'>
-              Reporting
+              Analytics
             </div>
           </Link> */}
 
@@ -111,7 +111,6 @@ class NavDropdown extends React.Component<NavDropdownProps> {
               Dos and Don'ts
             </div>
           </Link> */}
-
           {/* <Link to='/self-activation'>
             <div className='dropdown-item'>
               Self-Activation

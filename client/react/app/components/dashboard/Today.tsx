@@ -182,7 +182,7 @@ class Today extends React.Component<TodayProps, TodayState> {
     return (
       <div>
         <NavBar
-          title='Welcome!'
+          title='Today'
           history={history} />
 
         <div className='default-container'>
@@ -194,7 +194,7 @@ class Today extends React.Component<TodayProps, TodayState> {
                 handleChecklistClicked={this.createNewChecklist.bind(this)}
                 handleEntryClicked={this.createNewEntry.bind(this)} />
             </div> */}
-            <div className='dashboard-scorecard-container pull-right'>
+            <div className='dashboard-scorecard-container block-center'>
               <TodayProgressBar
                 currentScore={currentScore}
                 averageScore={averageScore}

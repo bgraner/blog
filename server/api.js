@@ -51,6 +51,7 @@ api.get('/users/:username/entries/:id', users.fetchEntry);
 api.get('/feed', isAuthenticated, users.feed);
 // Scorecards
 api.get('/scorecards', isAuthenticated, scorecards.fetch);
+api.get('/scorecards/progress-today', isAuthenticated, scorecards.fetchProgressToday);
 api.get('/scorecards/:id', isAuthenticated, scorecards.findById);
 api.post('/scorecards/date', isAuthenticated, scorecards.findOrCreateByDate); // TODO: name better
 api.post('/scorecards/new', isAuthenticated, scorecards.create);
@@ -65,6 +66,8 @@ api.get('/tasks', isAuthenticated, tasks.fetch);
 api.post('/tasks', isAuthenticated, tasks.create);
 api.put('/tasks/:id', isAuthenticated, tasks.update);
 api.get('/tasks/suggestions', isAuthenticated, tasks.fetchSuggestions);
+api.get('/tasks/defaults', isAuthenticated, tasks.fetchDefaults);
+api.post('/tasks/suggestions', isAuthenticated, tasks.createSuggestedTask);
 // Checklists
 api.get('/checklists', isAuthenticated, checklists.fetch);
 api.get('/checklists/:id', isAuthenticated, checklists.findById);

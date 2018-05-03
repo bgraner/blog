@@ -16,17 +16,22 @@ import {
   About,
   Library
 } from './components/home';
+
 import { Dashboard, Today } from './components/dashboard';
 import { EntryContainer, UserEntryContainer } from './components/entry';
 import { ScorecardContainer } from './components/scorecard';
 import ChecklistContainer from './components/checklist';
 import TaskList from './components/tasks';
 import FriendFeed from './components/feed';
+import SocialContainer from './components/social';
+import RewardsContainer from './components/rewards';
+
 import {
   Reporting,
   TaskReporting,
   MoodReporting
 } from './components/reporting';
+
 import {
   SelfActivationMethods,
   CognitiveDistortions,
@@ -69,6 +74,8 @@ ReactDOM.render(
             <Route path='/today' component={Today} />
             <Route path='/feed' component={FriendFeed} />
             <Route path='/tasks' component={TaskList} />
+            <Route path='/social' component={SocialContainer} />
+            <Route path='/rewards' component={RewardsContainer} />
             <Route path='/self-activation' component={SelfActivationMethods} />
             <Route path='/daily-activity-schedule' component={DailyActivitySchedule} />
             <Route path='/anti-procrastination' component={AntiProcrastinationSheet} />

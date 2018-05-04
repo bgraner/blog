@@ -1,14 +1,16 @@
 import * as React from 'react';
 import { RouteComponentProps, Link } from 'react-router-dom';
 import NavBar from '../navbar';
-import InviteFriendInput from './InviteFriendInput';
 
-interface SocialState {
+interface InviteFriendState {
   friendEmail: string,
   error: string
 }
 
-class SocialContainer extends React.Component<RouteComponentProps<{}>, SocialState> {
+interface InviteFriendProps {
+}
+
+class InviteFriendInput extends React.Component<InviteFriendProps, InviteFriendState> {
   constructor(props: RouteComponentProps<{}>) {
     super(props);
     this.state = {
@@ -18,7 +20,6 @@ class SocialContainer extends React.Component<RouteComponentProps<{}>, SocialSta
   }
 
   componentDidMount() {
-    const { history } = this.props;
   }
 
   onUpdateInput(e: any) {
@@ -34,15 +35,15 @@ class SocialContainer extends React.Component<RouteComponentProps<{}>, SocialSta
     const { friendEmail } = this.state;
 
     return this.addFriend({ friendEmail })
-      .then(() => "")
+      .then(res => console.log(res.success))
       .catch(err => {
         console.log('Error adding friend!', err);
         this.setState({ error: 'Error adding friend' });
       });
   }
 
-  addFriend(params: object): Promise<boolean> {
-    return Promise.resolve(true);
+  addFriend(params: object): Promise<any> {
+    return Promise.resolve({success:true});
   }
 
   render() {
@@ -51,17 +52,29 @@ class SocialContainer extends React.Component<RouteComponentProps<{}>, SocialSta
 
     return (
       <div>
-        <NavBar
-          title='Social'
-          linkTo='/today'
-          history={history} />
+        <form onSubmit={this.handleAddFriend.bind(this)}>
+          <input
+            type='text'
+            className='input-default -large'
+            placeholder='Email'
+            name='friendEmail'
+            value={this.state.friendEmail}
+            onChange={this.onUpdateInput.bind(this)} />
 
-        <div className='default-container'>
-          <InviteFriendInput />
-        </div>
+          <button
+            className='btn-default btn-sm'
+            type='submit'>
+            Add Friend
+            </button>
+
+          <small className='text-red'
+            style={{ marginLeft: 16 }}>
+            {this.state.error || ''}
+          </small>
+        </form>
       </div>
     );
   }
 }
 
-export default SocialContainer;
+export default InviteFriendInput;

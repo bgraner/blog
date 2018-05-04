@@ -4,7 +4,7 @@ import { Dispatch } from 'redux';
 import ReportingChart from '../reporting/ReportingChart';
 import { ReportingStats, fetchAllStats } from '../../helpers/reporting';
 import { AppState } from '../../helpers/utils';
-import { getAllStats } from '../../actions/actions';
+import { getAllStats } from '../../actions/actionCreators';
 import '../reporting/Reporting.less';
 
 const mapStateToProps = (state: AppState) => {

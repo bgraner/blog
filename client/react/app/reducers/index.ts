@@ -23,7 +23,7 @@ import {
 
 import friends from './friends';
 
-import * as actions from '../actions/actions';
+import * as actions from '../actions/actionCreators';
 import * as ac from '../actions/actionConstants';
 
 import {

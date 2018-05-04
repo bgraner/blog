@@ -14,7 +14,7 @@ import {
   updateChecklistScore
 } from '../../helpers/checklist';
 import { AppState, formatPoints, isDateToday } from '../../helpers/utils';
-import { getChecklist, updateScore } from '../../actions/actions';
+import { getChecklist, updateScore } from '../../actions/actionCreators';
 import './Checklist.less';
 
 interface ChecklistProps {

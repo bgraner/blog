@@ -24,7 +24,7 @@ import {
   getChecklists,
   getEntries,
   selectDate
-} from '../../actions/actions';
+} from '../../actions/actionCreators';
 
 import './Dashboard.less';
 

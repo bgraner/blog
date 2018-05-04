@@ -9,7 +9,7 @@ import Scorecard from './Scorecard';
 import { Task } from '../../helpers/tasks';
 import { IScorecard } from '../../helpers/scorecard';
 import { AppState, isDateToday } from '../../helpers/utils';
-import { getScorecard, toggleTask } from '../../actions/actions';
+import { getScorecard, toggleTask } from '../../actions/actionCreators';
 import './Scorecard.less';
 
 interface ScorecardContainerProps {

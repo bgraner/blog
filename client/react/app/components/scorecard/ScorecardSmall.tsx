@@ -16,7 +16,7 @@ import {
   toggleScorecardTask
 } from '../../helpers/scorecard';
 import { AppState, keyifyDate } from '../../helpers/utils';
-import { getScorecard } from '../../reducers';
+import { getScorecard } from '../../actions/actions';
 import './Scorecard.less';
 
 interface ScorecardProps {

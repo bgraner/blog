@@ -14,7 +14,7 @@ import TopMoods from './TopMoods';
 import HighImpactTasks from './HighImpactTasks';
 import { ReportingStats } from '../../helpers/reporting';
 import { AppState } from '../../helpers/utils';
-import { getAllStats } from '../../reducers';
+import { getAllStats } from '../../actions/actions';
 import './Reporting.less';
 
 const mapStateToProps = (state: AppState) => {

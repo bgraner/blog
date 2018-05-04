@@ -16,12 +16,16 @@ import { AppState, SelectedState, keyifyDate, getPastDates } from '../../helpers
 import {
   LIST_VIEW,
   CHART_VIEW,
-  UPDATE_VIEW,
+  UPDATE_VIEW
+} from '../../actions/actionConstants';
+
+import {
   getScorecards,
   getChecklists,
   getEntries,
   selectDate
-} from '../../reducers';
+} from '../../actions/actions';
+
 import './Dashboard.less';
 
 const mapStateToProps = (state: AppState) => {

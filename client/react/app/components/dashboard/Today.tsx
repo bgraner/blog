@@ -24,7 +24,7 @@ import {
   getEntryByDate,
   getChallengesByDate,
   toggleTask
-} from '../../reducers';
+} from '../../actions/actions';
 import './Dashboard.less';
 
 const mapStateToProps = (state: AppState) => {

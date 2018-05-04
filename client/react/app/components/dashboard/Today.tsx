@@ -187,19 +187,18 @@ class Today extends React.Component<TodayProps, TodayState> {
 
         <div className='default-container'>
           <div className='clearfix'>
-            {/* <div className='dashboard-preview-container pull-left'>
-              <DashboardPreview
-                selected={selected}
-                handleScorecardClicked={this.createNewScorecard.bind(this)}
-                handleChecklistClicked={this.createNewChecklist.bind(this)}
-                handleEntryClicked={this.createNewEntry.bind(this)} />
-            </div> */}
-            <div className='dashboard-scorecard-container block-center'>
-              <TodayProgressBar
+            <div className='dashboard-preview-container pull-left'>
+            <TodayProgressBar
                 currentScore={currentScore}
                 averageScore={averageScore}
                 topScore={topScore} />
-
+              {/* <DashboardPreview
+                selected={selected}
+                handleScorecardClicked={this.createNewScorecard.bind(this)}
+                handleChecklistClicked={this.createNewChecklist.bind(this)}
+                handleEntryClicked={this.createNewEntry.bind(this)} /> */}
+            </div>
+            <div className='dashboard-scorecard-container pull-right'>
               <Scorecard
                 tasks={tasks}
                 challenges={challenges}

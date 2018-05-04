@@ -53,5 +53,12 @@ module.exports = {
         return res.json({ scorecards, checklists });
       })
       .catch(err => handleError(res, err));
+  },
+
+  inviteFriend: (req, res) => {
+    const userId = req.user.id
+
+    return res.json({ success: true });
   }
+
 };

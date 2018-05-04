@@ -27,6 +27,12 @@ import * as actions from '../actions/actions';
 import * as ac from '../actions/actionConstants';
 
 import {
+  Entry
+} from '../helpers/entries';
+
+import { ReportingStats } from '../helpers/reporting';
+
+import {
   SelectedState,
   ChallengeState,
   MappedItems,

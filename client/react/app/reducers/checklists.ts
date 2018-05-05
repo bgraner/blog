@@ -2,13 +2,13 @@ import { extend } from 'lodash';
 import * as moment from 'moment';
 
 import {
-  IChecklist
-} from '../helpers/checklist';
-
-import {
   MappedItems,
   keyifyDate
 } from '../helpers/utils';
+
+import {
+  IChecklist
+} from '../helpers/checklist';
 
 import { IAction } from '../actions/actionCreators';
 

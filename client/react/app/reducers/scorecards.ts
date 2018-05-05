@@ -2,13 +2,13 @@ import { extend } from 'lodash';
 import * as moment from 'moment';
 
 import {
-  IScorecard
-} from '../helpers/scorecard';
-
-import {
   MappedItems,
   keyifyDate
 } from '../helpers/utils';
+
+import {
+  IScorecard
+} from '../helpers/scorecard';
 
 import { IAction } from '../actions/actionCreators';
 import {

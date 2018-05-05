@@ -3,9 +3,7 @@ import {
   keyifyDate
 } from '../helpers/utils';
 
-import {
-  IChallenge
-} from '../helpers/challenges';
+import { IChallenge } from '../helpers/challenges';
 
 import { IAction } from '../actions/actionCreators';
 
